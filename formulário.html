@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=dev, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="Formulario.css" media="">
+    <title>Document</title>
+</head>
+<body>
+    <div class="campo">
+        <h2 id="subtítulo">Inscrições para o curso</h2>
+        <h1 id="titulo">Assédios moral e sexual</h1>
+        <h3>Dia 27/02 - 14h às 17h</h3>
+        <h6>Evento presencial</h6>
+        <h4>Auditório da SMAP - 14º andar (Siqueira Campos, 1300)</h4>
+        <p>Preencha com suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="Grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <br>
+            <div class="campo">
+            <label for="Sobrenome">Sobrenome</label>
+            <input type="text" name="Sobrenome" id="sobrenome" required>
+            </div>
+            <br>
+            <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div class="campo">
+            <label for="Matrícula">Matrícula</label>
+            <input type="type" name="numero" id="numero">
+            </div>
+            <br>
+            <div class="campo">
+            <label for="setor">Setor</label>
+            <input type="text" name="text" id="text">
+            </div>
+            <br>
+            <div class="campo">
+                <label for="Telefone">Telefone</label>
+                <input type="tel" name="numero" id="numero">
+            </div>
+            <br>
+            <div class="campo">
+                <label for=""><strong>Trabalha com processos correcionais?</strong></label>
+                <label for="">
+                    <input type="radio" name="sim/não" value="Sim">Sim
+                </label>
+                <label for="">
+                    <input type="radio" name="sim/não" value="Não">Não
+                </label>    
+            </div> 
+            <br>   
+            <div class="campo">     
+                <label for=""><strong>Você é servidor público?</strong></label>
+                <label for="">
+                    <input type="radio" name="sim/não" value if(="Sim"){}>Sim
+                 </label>   
+                <label for="">
+                    <select id="Cargo">
+                        <option selected disabled value=""></option>
+                        <option>"Efetivo"</option>
+                        <option>"Estágio"</option>
+                        <option> "Cargo em comissão"</option>
+                    </select>
+                </label>
+            </div>
+            </fieldset>
+            <br>
+            
+            <fieldset class="Grupo">
+                <div id= "check">
+                    <label for="Por qual/quais motivos você se matriculou nesse curso?"><strong>Por qual/quais motivos você se matriculou nesse curso?</strong></label>
+                    <br>
+                    <input type="checkbox" id="motivo 1" name="motivo 1" value="Agregar conhecimento">
+                    <label for="motivo 1">Agregar conhecimento</label>
+                    <input type="checkbox" id="motivo 2" name="motivo 2" value="Convocação">
+                    <label for="motivo 2">Convocação</label>
+                </div>
+                </fieldset>
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco da sua experiência com o curso</strong></label>
+            <textarea row="7" style="width: 26em;" id="experiência" name="experiência"></textarea>
+        </div>
+        <button class="botão" type="submit">Concluído</button>
+        </form>
+
+</body>
+
+</html>
